@@ -32,7 +32,7 @@ SELECT * FROM cotxes WHERE marca = "Toyota";
 
 SELECT * FROM cotxes WHERE marca <> "Honda";
 
-SELECT * FROM cotxes WHERE modelo LIKE "%911%";
+SELECT * FROM cotxes WHERE model LIKE "%911%";
 
 SELECT * FROM cotxes WHERE any <= 2000;
 
