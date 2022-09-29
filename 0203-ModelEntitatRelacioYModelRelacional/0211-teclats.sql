@@ -17,7 +17,7 @@ CREATE TABLE teclats (
   marca VARCHAR (30), 
   model VARCHAR (50), 
   format VARCHAR (10), 
-  preu NUMERIC (6,2)
+  preu NUMERIC (6,2),
   valoracio NUMERIC (3,1)
 );
 
@@ -36,7 +36,8 @@ SELECT * FROM teclats WHERE marca = "Logitech";
 
 SELECT * FROM teclats WHERE marca <> "HP";
 
-SELECT * FROM teclats WHERE modelo LIKE "%MX%";
+SELECT * FROM teclats WHERE model LIKE "%MX%";
 
-SELECT * FROM teclats WHERE preu < 100 
-    AND  format IS NOT NULL;
+SELECT * FROM teclats 
+	WHERE preu < 100 
+    AND format IS NOT NULL;
