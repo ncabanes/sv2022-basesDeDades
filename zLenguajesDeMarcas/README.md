@@ -13,3 +13,4 @@
 - [010-tablas1.html](010-tablas1.html): Contacto con las tablas
 - [011-enlaces.html](011-enlaces.html): Enlaces a otras páginas
 - [012-imagenes1.html](012-imagenes1.html): Contacto con las imágenes
+- [013-entidades.html](013-entidades.html): Entidades (menor que, mayor que, acentos)
