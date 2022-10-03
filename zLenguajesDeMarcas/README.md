@@ -12,3 +12,4 @@
 - [009-hrBr.html](009-hrBr.html): Saltos de línea (br) y líneas horizontales (hr)
 - [010-tablas1.html](010-tablas1.html): Contacto con las tablas
 - [011-enlaces.html](011-enlaces.html): Enlaces a otras páginas
+- [012-imagenes1.html](012-imagenes1.html): Contacto con las imágenes
