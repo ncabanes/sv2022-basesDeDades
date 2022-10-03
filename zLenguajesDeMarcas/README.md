@@ -8,3 +8,4 @@
 - [006-cursivaNegrita.html](006-cursivaNegrita.html): Cursiva y negrita, formato actual (strong, em)
 - [007-listas.html](007-listas.html): Contacto con las listas (ol, ul, li)
 - [008a-titulos.html](008a-titulos.html): Contacto con los titulos (h1, h2, ...)
+- [008b-curriculum.html](008b-curriculum.html): Ejemplo: currículum
