@@ -15,3 +15,4 @@
 - [012-imagenes1.html](012-imagenes1.html): Contacto con las imágenes
 - [013-entidades.html](013-entidades.html): Entidades (menor que, mayor que, acentos)
 - [014-charset.html](014-charset.html): meta charset
+- [015-preformat.html](015-preformat.html): Preformateado (pre, code)
