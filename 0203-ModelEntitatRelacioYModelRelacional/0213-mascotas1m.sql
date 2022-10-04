@@ -3,6 +3,7 @@
 --propietario (codigo,nombre,apellidos, telefono)
 --CP: codigo
 --mascotas (codigo,nombre,tipo,codi_propietario)
+--CP: codigo
 
 CREATE TABLE propietarios (
     codigo VARCHAR (5) PRIMARY KEY, 
@@ -57,7 +58,7 @@ SELECT nombre FROM mascotas WHERE mascotas.codi_propietario = 1;
 
 SELECT mascotas.nombre
     FROM propietarios, mascotas 
-    WHERE propietarios.codigo = mascotas.codi_propietario;
+    WHERE propietarios.codigo = mascotas.codi_propietario
     AND propietarios.nombre = "Fernando";
 
 
