@@ -29,3 +29,6 @@
 - [021-curriculumSupSub.html](021-curriculumSupSub.html): Superíndices y subíndices (sup, sub)  [Saber más](https://nachoiborraies.github.io/htmlcss/md/es/02b#53-sub%C3%ADndices-y-super%C3%ADndices-etiquetas-sup-y-sub)
 - [022-curriculumSpanDiv.html](022-curriculumSpanDiv.html): Contacto con span y div  [Saber más](https://nachoiborraies.github.io/htmlcss/md/es/02b#24-la-etiqueta-span)
  
+- [025-form1TextSubmit.html](025-form1TextSubmit.html): Contacto con formularios: form, input text, submit  [Saber más](https://nachoiborraies.github.io/htmlcss/md/es/02e)
+- [026-form2PasswordPlaceholder.html](026-form2PasswordPlaceholder.html): tipo password; placeholder
+- [027-form3table.html](027-form3table.html): alineado "no responsive", usando tablas
