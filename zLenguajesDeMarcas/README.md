@@ -24,4 +24,8 @@
 - [017a-curriculumAName.html](017a-curriculumAName.html): Enlaces internos 1 (a name)  [Saber más](https://nachoiborraies.github.io/htmlcss/md/es/02d#23-puntos-de-anclaje-y-enlaces-internos)
 - [017b-curriculumId.html](017b-curriculumId.html): Enlaces internos 2 (id)  [Saber más](https://nachoiborraies.github.io/htmlcss/md/es/02d#23-puntos-de-anclaje-y-enlaces-internos)
 - [018-tablas2.html](018-tablas2.html): Más sobre tablas (thead, colspan)  [Saber más](https://nachoiborraies.github.io/htmlcss/md/es/02d#12-otras-etiquetas-para-tablas)
+- [019-curriculumDL.html](019-curriculumDL.html): Listas de definición (dl)  [Saber más](https://nachoiborraies.github.io/htmlcss/md/es/02b#44-listas-de-descripci%C3%B3n-etiquetas-dl-dt-y-dd)
+- [020-curriculumQuotehtml.html](020-curriculumQuotehtml.html): Citas (blockquote)  [Saber más](https://nachoiborraies.github.io/htmlcss/md/es/02b#51-citas-etiquetas-blockquote-y-q)
+- [021-curriculumSupSub.html](021-curriculumSupSub.html): Superíndices y subíndices (sup, sub)  [Saber más](https://nachoiborraies.github.io/htmlcss/md/es/02b#53-sub%C3%ADndices-y-super%C3%ADndices-etiquetas-sup-y-sub)
+- [022-curriculumSpanDiv.html](022-curriculumSpanDiv.html): Contacto con span y div  [Saber más](https://nachoiborraies.github.io/htmlcss/md/es/02b#24-la-etiqueta-span)
  
