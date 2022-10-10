@@ -22,3 +22,4 @@
 ## Sesión 2
 
 - [017a-curriculumAName.html](017a-curriculumAName.html): Enlaces internos 1 (a name)  [Saber más](https://nachoiborraies.github.io/htmlcss/md/es/02d#23-puntos-de-anclaje-y-enlaces-internos)
+- [017b-curriculumId.html](017b-curriculumId.html): Enlaces internos 2 (id)  [Saber más](https://nachoiborraies.github.io/htmlcss/md/es/02d#23-puntos-de-anclaje-y-enlaces-internos)
