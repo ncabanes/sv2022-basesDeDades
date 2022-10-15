@@ -58,7 +58,7 @@ INSERT INTO Categorias VALUES(5, "Juvenil");
 INSERT INTO Usuarios VALUES("51234956A", "Paco Fernandez", 5);
 INSERT INTO Usuarios VALUES("51234956B", "Alonso Rico", 4);
 INSERT INTO Usuarios VALUES("51234934A", "Sara Pacheco", 2);
-INSERT INTO Usuarios VALUES("51221956A", "Alejandro Garcia", 2);
+INSERT INTO Usuarios VALUES("51221956A", "Alejandro Garcia", NULL);
 
 INSERT INTO Practican VALUES("51234956A", 1, "01-09-22", "01-10-22" );
 INSERT INTO Practican VALUES("51234956A", 1, "01-10-22", "01-11-22" );
