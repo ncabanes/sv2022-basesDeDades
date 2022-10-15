@@ -1,15 +1,15 @@
-.open hospitalV1
+.open hospitalV2
 
 -- paciente(sip, nombre)
 -- CP: sip
+
+-- especialidad (codigo, nombre)
+-- CP: codigo
 
 -- medico (numColeg, nombre, codEspecialidad)
 -- CP: numColeg
 -- cAj: codEspecialidad -> especialidad
 -- VNN: codEspecialidad
-
--- especialidad (codigo, nombre)
--- CP: codigo
 
 -- atender(numColeg, sip, fechahora, motivo, diagnostico)
 -- CP: numColeg, sip, fechahora
