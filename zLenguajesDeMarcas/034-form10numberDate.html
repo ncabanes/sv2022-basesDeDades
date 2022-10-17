@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Alta de nuevo alumno</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+	<h1>Nivel de estudios</h1>
+	
+	<form>
+        <label for="centro">Centro</label> <input id="centro" name="centro" type="text" value="I.E.S. San Vicente" readonly><br>
+		<label for="nombre">Nombre</label> <input id="nombre" name="nombre"  type="text" placeholder="Su nombre aquí" maxlength="20"><br>
+
+        <label for="hermanos">Cantidad de hermanos</label> <input id="hermanos" name="hermanos"  type="number" ><br>
+        <label for="nacimiento">Fecha de nacimiento</label> <input id="nacimiento" name="nacimiento"  type="date"><br>
+
+        <h2>Localidad</h2>
+        <select name="ciudad">
+            <option value="sv" selected>San Vicente</option>
+            <option value="a">Alicante</option>
+            <option value="ag">Agost</option>
+            <option value="o">Otros</option>
+        </select>
+        
+
+		<h2>Estudios anteriores</h2>
+		<input type="radio" id="nivelEstudiosB" name="nivelEstudios" value="fpgb"><label for="nivelEstudiosB">F.P. Grado Básico</label><br>
+		<input type="radio" id="nivelEstudiosM" name="nivelEstudios" value="fpgm"><label for="nivelEstudiosM">F.P. Grado Medio</label><br>
+		<input type="radio" id="nivelEstudiosS" name="nivelEstudios" value="fpgs" checked><label for="nivelEstudiosS">F.P. Grado Superior</label><br>
+
+        <br>
+        <input type="checkbox" name="alergia" id="alergia"><label for="alergia">Alergias</label><br>
+        <input type="checkbox" name="deportista" id="deportista"><label for="deportista">Deportista de élite</label><br>
+
+        <br>
+        <label for="comentarios">Comentarios</label><br>
+        <textarea name="comentarios" id="comentarios" rows="10" cols="40">Introduzca aquí sus comentarios</textarea>
+
+		<br>
+        <input type="submit" value="Acceder">
+	</form>
+
+</body>
+</html>
