@@ -5,6 +5,7 @@
 
 --Ciudad(nombrePais, nombre)
 --CP: nombrePais, nombre
+--CAj: nombrePais -> Pais
 
 CREATE TABLE paises(
   nombre VARCHAR(30) PRIMARY KEY
