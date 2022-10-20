@@ -21,7 +21,7 @@ CREATE TABLE projecte(
 
 CREATE TABLE dirigir(
     codDir VARCHAR(15) PRIMARY KEY,
-    codPro VARCHAR(10) UNIQUE,
+    codPro VARCHAR(10) UNIQUE NOT NULL,
     FOREIGN KEY (codDir) REFERENCES director(codi),
     FOREIGN KEY (codPro) REFERENCES projecte(codi)
 );
