@@ -1,0 +1,22 @@
+body
+{
+	font-family: "Open sans";
+	font-weight: lighter;
+}
+
+h1 
+{ 
+	color: red; 
+	font-family: Inconsolata,Arial; 
+}
+
+h2 
+{
+	color: brown; 
+	font-size: 16pt;
+}
+
+a
+{
+	font-weight: bold;
+}

@@ -1,0 +1,16 @@
+body
+{
+	font-family: Arial;
+}
+
+h1 
+{ 
+	color: red; 
+	font-family: Inconsolata,Arial; 
+}
+
+h2 
+{
+	color: brown; 
+	font-size: 16pt;
+}

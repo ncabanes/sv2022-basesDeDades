@@ -1,0 +1,38 @@
+body
+{
+	font-family: "Open sans";
+	font-weight: lighter;
+	background-color: LemonChiffon;
+}
+
+h1 
+{ 
+	color: DarkRed; 
+	font-family: Inconsolata,Arial; 
+	text-align: center;
+}
+
+h2 
+{
+	color: brown; 
+	font-size: 16pt;
+	text-indent: 1cm;
+}
+
+dd
+{
+	text-align: justify;
+}
+
+a
+{
+	font-weight: bold;
+	text-decoration: none;
+	font-style: italic;
+	color: crimson;
+}
+
+.importante
+{
+	font-style: italic;
+}
