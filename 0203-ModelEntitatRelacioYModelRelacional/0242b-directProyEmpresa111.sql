@@ -8,9 +8,9 @@
 -- CP:id
 --
 -- dirigir(id_proyecto,id_director,id_empresa)
--- CP:id_proyecto,id_director,id_empresa
--- CAlt:id_proyecto,id_director,id_empresa
--- CAlt:id_proyecto,id_director,id_empresa
+-- CP:id_proyecto,id_director
+-- CAlt:id_director,id_empresa
+-- CAlt:id_proyecto,id_empresa
 -- CAj:id_proyecto->proyectos
 -- CAj:id_director->directores
 -- CAj:id_empresa->empresas
