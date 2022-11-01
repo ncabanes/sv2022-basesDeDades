@@ -1,0 +1,32 @@
+body 
+{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #B6EEF0;
+    text-align: justify;
+    line-height: 1.2em;
+}
+
+h1 
+{
+    color:#0728F6;
+    font-family: 'Gluten', cursive;
+    font-size: 24pt;
+}
+
+h2 
+{
+    color:#455CED;
+    font-family: Arial;
+    font-size: 20pt;
+    margin-left: 1cm;
+}
+
+h3 
+{
+    color:#6272D6;
+    font-family: Arial;
+    font-size: 16pt;
+    margin: 0 0 0 1.5cm;
+}
+
+strong {color:#455CED;}

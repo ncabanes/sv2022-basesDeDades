@@ -1,0 +1,39 @@
+body 
+{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #B6EEF0;
+    text-align: justify;
+    line-height: 1.2em;
+}
+
+h1 
+{
+    color:#0728F6;
+    font-family: 'Gluten', cursive;
+    font-size: 24pt;
+    border-bottom: double black 2px;
+    text-align: center;
+    margin: 0.8cm 3cm 0.5cm 3cm;
+    padding-bottom: 0.2cm;
+}
+
+h2 
+{
+    color:#455CED;
+    font-family: Arial;
+    font-size: 20pt;
+    margin-left: 1cm;
+    margin-right: 1cm;
+    padding: 0.3cm;
+    border: solid 3px black;
+}
+
+h3 
+{
+    color:#6272D6;
+    font-family: Arial;
+    font-size: 16pt;
+    margin: 0 0 0 1.5cm;
+}
+
+strong {color:#455CED;}
