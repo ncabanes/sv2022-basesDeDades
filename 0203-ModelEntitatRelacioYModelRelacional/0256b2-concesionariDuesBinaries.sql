@@ -1,5 +1,5 @@
 
--- priopietarios(dni,nombre,direccion,ciudad,telefono,email)
+-- propietarios(dni,nombre,direccion,ciudad,telefono,email)
 -- PK: dni
 
 -- vendedores(codigo,nombre)
@@ -10,13 +10,16 @@
 -- FK: codigo_vendedor -> vendedores
 -- FK: dni_propietario -> propietarios
 
--- sub(altura)
+-- suv(bastidor, alturaSuelo)
+-- PK: bastidor
 -- FK: bastidor -> vehiculos
 
 -- coches(bastidor)
+-- PK: bastidor
 -- FK: bastidor -> vehiculos
 
--- comercial(bastidor,capacidad)
+-- comercial(bastidor,capacidadCarga)
+-- PK: bastidor
 -- FK: bastidor -> vehiculos
 
 
