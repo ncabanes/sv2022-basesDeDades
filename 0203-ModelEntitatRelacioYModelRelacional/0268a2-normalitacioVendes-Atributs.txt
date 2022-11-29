@@ -1,0 +1,21 @@
+Inicial.
+
+Taula "vendes": codi  data  codClient  nomClient  codArticle  nomArticle  quantitat  preu
+
+1.  Separar grups repetitius
+Taula "vendes": codiVenda  data  codClient  nomClient
+Taula "detallVendes": venda  codArticle  nomArticle  quantitat  preu
+
+2.  Separar atributs que depenguen de part de la clau
+Taula "detallVendes": venda  codArticle  quantitat
+Taula "articles": codArticle  nomArticle  preu
+
+3.  Separar atributs que depenguen d'altres atributs (no clave)
+Taula "vendes": codi  data  codClient
+Taula "clients": codClient  nomClient
+
+Resultat:
+Taula "vendes": codi  data  codClient
+Taula "clients": codClient  nomClient
+Taula "detallVendes": venda  codArticle  quantitat
+Taula "articles": codArticle  nomArticle  preu
