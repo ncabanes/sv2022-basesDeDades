@@ -1,0 +1,29 @@
+Normalització: Animals en perill d'extinció
+
+Animals (codi codAnimal nomAnimal codFam nomFam continent codEstat nomEstat)
+
+---
+
+1. Separar grups repetitius
+
+Continents (codContinent nomContinent)
+
+Animals (codi codAnimal nomAnimal codFam nomFam codContinent codEstat nomEstat)
+
+---
+
+2. Separar atributs que depenguen de part de la clau
+
+Viure (codAnimal codContinent)
+
+DetallsAnimals (codAnimal nomAnimal codFam nomFam codEstat nomEstat)
+
+---
+
+3. Separar atributs que depenguen d'altres atributs (no clave)
+
+Families (codFam nomFam)
+
+Estats (codEstat nomEstat)
+
+DetallsAnimals (codAnimal nomAnimal codFam codEstat)
