@@ -1,0 +1,36 @@
+bus(regNo, make, size, deck, noPassgaa)
+PK: regNo
+
+garage(name, address, busRegNo)
+PK: name
+FK: busRegNo -> bus
+
+route(routeNo, avgPass)
+PK: routeNo
+
+servicedBy(busRegNo, routeNo)
+PK: (busRegNo, routeNo)
+FK: busRegNo -> bus
+FK: routeNo -> route
+
+stage(stageNo, routeNo)
+PK: stageNo
+FK: routeNo -> route
+
+driver(empNo, name, telNo, address, stageNo)
+PK: empNo
+FK: stageNo -> stage
+
+town(name)
+PK: name
+
+passTrough(stageNo, townName)
+PK: (stageNo, townName)
+FK: stageNo -> stage
+FK: townName -> town
+
+located(garageName, townName)
+PK: garageName
+UK: townName
+FK: garageName -> garage
+FK: townName -> town
