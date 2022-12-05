@@ -1,0 +1,30 @@
+-- Coach (id, name)
+-- CP: id 
+
+-- User (id, name, coachId)
+-- CP: id 
+-- CAj coachId -> coach
+
+-- Habit (id, name)
+-- CP: id
+
+-- UserHasHabit (habitId, UserId)
+-- CP: habitId, UserId
+-- CAj: habitId -> habit
+-- CAj: UserId -> user
+
+-- CheckIn (id, date, UserId, habitId)
+-- CP: id
+-- CAj: UserId -> user (VNN)
+-- CAj: habitId -> habit (VNN)
+
+-- Comment (id, text, date, ChekinId)
+-- CP: id
+-- CAj: ChekInId -> checkIn
+
+-- Write (userId, coachId, commentId)
+-- CP: userId, commentId
+-- CAlt: coachId, commentId
+-- CAj: userId -> user
+-- CAj: commentId -> comment
+-- CAj: coachId -> coach
