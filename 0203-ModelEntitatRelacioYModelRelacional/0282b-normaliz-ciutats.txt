@@ -1,0 +1,18 @@
+CIUTATS(codi, nom, provincia, comunitat, clima)
+
+1. Separar grups repetitius
+
+CIUTATS(codi, nom, provincia, codiComunitat, codiClima)
+COMUNITAT(codiComunitat, nomComunitat)
+CLIMA(codiClima, nomClima)
+
+2. Separar atributs que depenguen de part de la clau
+
+(No hi ha claus compostes)
+
+3. Separar atributs que depenguen d'altres atributs (no clau)
+
+CIUTATS(codiCiutat, nomCiutat, codiProvincia, codiClima)
+PROVINCIA(codiProvincia, nomProvincia, codiComunitat)
+COMUNITAT(codiComunitat, nomComunitat)
+CLIMA(codiClima, nomClima)
