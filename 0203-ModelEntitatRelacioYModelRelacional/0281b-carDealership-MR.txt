@@ -1,0 +1,47 @@
+car(carID, serial number, make, model, colour, year, isForSale)
+PK: carID
+
+customer(customerID, lastName, firstName, phoneNumber, address, city, state, country, postalCode)
+PK: customerID
+
+service(serviceID, service name, hourly rate)
+PK: serviceID
+
+parts(partsID, partNumber, description, purchasePrice, retailPrice)
+PK: partsID
+
+
+salesperson(salespersonID, lastName, firstName)
+PK: salespersonID
+
+mechanic(mechanicID, lastName, firstName)
+PK: mechanicID
+
+
+salesInvoce(invoiceID, invoiceNumber, date, carID, cutomerID, salespersonID)
+PK: invoiceID
+FK: carID -> car  (Not Null)
+FK: customerID -> customer  (Not Null)
+FK: salespersonID -> salesPerson  (Not Null)
+
+serviceTicket(serviceTicketID, serviceTicketNumber, dateReceived, comments, dateReturned, carID, customerID)
+PK: serviceTicketID
+FK: carID -> car  (Not Null)
+FK: customerID -> customer  (Not Null)
+
+partsUsed(partsUsedID, numberUsed, price, partsID, serviceTicketID)
+PK: partsUsedID
+FK: partsID -> parts  (Not Null)
+FK: serviceTicketID -> serviceTicket  (Not Null)
+
+serviceMechanic(serviceMechanicID, hours, comment, rate, serviceTicketID, serviceID, mechanicID)
+PK: serviceMechanickID
+FK: serviceTicketID -> serviceTicket  (Not Null)
+FK: serviceID -> service (Not Null)
+FK: mechanicID -> mechanic (Not Null)
+
+
+
+
+
+
