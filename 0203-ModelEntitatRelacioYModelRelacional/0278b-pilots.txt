@@ -1,0 +1,39 @@
+Pilot(pilot_id, cert_id_trainig, type_rating_id, aircraft_id)
+PK:pilot_id
+Fk:cert_id_trainig -> Emergency traing
+FK:type_rating_id -> Type rating
+FK:aircraft_id -> Aircraft Type 
+
+Emergency_Training(cert_id)
+PK: cert_id
+
+Aircraft_type(type_id)
+PK: type_id
+
+Type_Rating(type_R_id)
+PK: type_R_id
+
+Flight_Attendant(flight_att_id)
+PK:flight_att_id
+
+AssignAttendantFlight(flight_att_id, aircraft_type_id)
+PK:(flight_att_id, aircraft_type_id)
+FK: flight_att_id -> Flight_Attendant
+FK: aircraft_type_id -> Aircraft_type
+
+AttendantRequireTraining(flight_Alt_id,cert_id)
+PK: (flight_att_id, cert_id)
+FK: flight_att_id -> Flight_Attendant
+FK: cert_id -> Emergency_Training
+
+RatingProvidedForAircraft(type_R_id, aircraft_id)
+PK: type_R_id
+UK: aircraft_id
+FK: type_R_id -> Type_Rating
+FK: aircraft_type_id -> Aircraft_type
+
+TrainingProvidedForAircraft(cert_id, aircraft_id)
+PK: cert_id
+UK: aircraft_id
+FK: cert_id -> Emergency_Training
+FK: aircraft_type_id -> Aircraft_type
