@@ -1,0 +1,25 @@
+0. Dades originals
+
+ALUMNES i NOTES: alumne professor assignatura tema nota
+
+1. Separar grups repetitius
+
+ALUMNES: codAlumne nomAlumne
+PROFESSORS: codProfessor nomProfessor
+NOTES: codAlumne codProfessor Assignatura Tema Nota
+
+2. Separar atributs que depenguen de part de la clau
+
+ALUMNES: codAlumne nomAlumne
+PROFESSORS: codProfessor nomProfessor
+NOTES: codAlumne codTema Nota
+TEMES: codTema nomTema codAssignatura nomAssignatura codProfessor
+
+3. Separar atributs que depenguen d'altres atributs (no clau)
+
+ALUMNES: codAlumne nomAlumne
+PROFESSORS: codProfessor nomProfessor
+NOTES: codAlumne codTema Nota
+ASSIGNATURES: codAssignatura nomAssignatura codProfessor
+TEMES: codTema nomTema
+TEMES_PERTANYEN_A_ASIGNATURA: codTema codAssignatura
