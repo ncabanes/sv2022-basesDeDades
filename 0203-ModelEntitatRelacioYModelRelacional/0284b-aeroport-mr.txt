@@ -1,0 +1,19 @@
+AEROPORT(codi, nom, ciutat)
+CP: codi
+
+PROGRAMA_VOL(codi, diaSetmana, hora, aeroportOrg, aeroportDest)
+CP: codi
+CEx: aeroportOrg -> AEROPORT (VNN)
+CEx: aeroportDest -> AEROPORT (VNN)
+
+PROGRAMA_VOL_DIRECT(codiProgVol)
+CP: codiProgVol
+CEx: codiProgVol -> PROGRAMA_VOL
+
+PROGRAMA_VOL_ESCALES(codiProgVol)
+CP: codiProgVol
+CEx: codiProgVol -> PROGRAMA_VOL
+
+ESCALA(codiProgVolEsc, numero, nom)
+CP: codiProgVolEsc, numero
+CEx: codiProgVolEsc -> PROGRAMA_VOL_ESCALES
