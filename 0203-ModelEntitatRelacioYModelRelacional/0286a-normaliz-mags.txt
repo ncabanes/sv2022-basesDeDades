@@ -1,0 +1,103 @@
+Batalles de mags
+
+Conjur       CodDe  NomDe      CasaDe        CodA   NomA      CasaA         Resultat
+Petrificus   H      Harrison   Aixeta d'or    E     Herminia  Aixeta d'or   Repel·lit
+Petrificus   E      Herminia   Aixeta d'or    H     Harrison  Aixeta d'or   Congelat
+Petrificus   E      Herminia   Aixeta d'or    V     Vicent    Serp          Congelat
+Ridiculus    D      Daniel     Serp           R     Ronaldo   Aixeta d'or   Avergonyit
+Ridiculus    D      Daniel     Serp           E     Herminia  Aixeta d'or   Repel·lit
+MaxLuminus   A      Alfredo    Arpa de corb   E     Herminia  Aixeta d'or   Encegat
+
+ 
+BATALLES(Conjur, CodDe, NomDe, CasaDe, CodA, NomA, CasaA, Resultat)
+
+1. Separar grups repetitius
+
+Per exemple, els conjurs y els resultats semblen repetitius.
+
+CodConjur  NomConjur     
+P          Petrificus 
+R          Ridiculus  t
+L          MaxLuminus 
+
+CodResultat  NomResultat
+R            Repel·lit
+C            Congelat
+A            Avergonyit
+E            Encegat
+
+CodConjur  CodDe  NomDe      CasaDe        CodA   NomA      CasaA         CodResultat
+P          H      Harrison   Aixeta d'or    E     Herminia  Aixeta d'or   R
+P          E      Herminia   Aixeta d'or    H     Harrison  Aixeta d'or   C
+P          E      Herminia   Aixeta d'or    V     Vicent    Serp          C
+R          D      Daniel     Serp           R     Ronaldo   Aixeta d'or   A
+R          D      Daniel     Serp           E     Herminia  Aixeta d'or   R
+M          A      Alfredo    Arpa de corb   E     Herminia  Aixeta d'or   E
+
+CONJURS(CodConjur, NomConjur)
+RESULTATS(CodResultat, NomResultat) 
+BATALLES(CodConjur, CodDe, NomDe, CasaDe, CodA, NomA, CasaA, CodResultat)
+
+
+
+2. Separar atributs que depenguen de part de la clau
+
+Sembla que tenim una clau composta: codDe + codA
+
+CodConjur  CodDe  CodA   CodResultat
+P          H       E     R
+P          E       H     C
+P          E       V     C
+R          D       R     A
+R          D       E     R
+M          A       E     E
+
+O, si preferim les claus en primer lloc:
+
+CodDe  CodA  CodConjur  CodResultat 
+H       E    P          R           
+E       H    P          C           
+E       V    P          C           
+D       R    R          A           
+D       E    R          R           
+A       E    M          E           
+
+I extraiem les dades dels mags:
+
+CodMag  NomMag     CasaMag
+H       Harrison   Aixeta d'or 
+E       Herminia   Aixeta d'or 
+D       Daniel     Serp        
+A       Alfredo    Arpa de corb
+
+
+BATALLES(CodMagDe, CodMagA, CodConjur, CodResultat)
+MAGS(CodMag, NomMag, CasaMag)
+
+
+3. Separar atributs que depenguen d'altres atributs (no clave)
+
+La casa és una dada repetitiva. Podríem triar un codi i portar el text a una altra taula:
+
+CodMag  NomMag     CodCasaMag  NomCasaMag
+H       Harrison   a           Aixeta d'or 
+E       Herminia   a           Aixeta d'or 
+D       Daniel     s           Serp        
+A       Alfredo    c           Arpa de corb
+
+MAGS(CodMag, NomMag, CodCasaMag, NomCasaMag)
+
+I obtindriem:
+
+MAGS(CodMag, NomMag, CodCasaMag)
+CASES(CodCasaMag, NomCasaMag)
+
+ 
+
+Resultat final:
+
+CONJURS(CodConjur, NomConjur)
+RESULTATS(CodResultat, NomResultat) 
+CASES(CodCasaMag, NomCasaMag)
+MAGS(CodMag, NomMag, CodCasaMag)
+BATALLES(CodMagDe, CodMagA, CodConjur, CodResultat)
