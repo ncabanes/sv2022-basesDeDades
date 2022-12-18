@@ -1,0 +1,40 @@
+BATALLA(codi, nom, codiPrecursora)
+CP: codi
+CEx: codiPrecursora -> BATALLA
+
+AERONAU(codi, nom, model, submodel)
+CP: codi
+
+SISTEMA ESTEL·LAR(codi, nom)
+CP: codi
+CEx: codiPrecursora -> BATALLA
+
+PLANETA(codi, nom)
+CP: codi
+
+PILOT(codi, nom, codiPlaneta)
+CP: codi
+CEx: codiPlaneta -> PLANETA
+
+ESPECIALITATS_PILOTS(codiPilot, codiEspecialitat, nom)
+CP: codiPilot, codiEspecialitat
+CEx: codiPilot -> PILOT
+
+BATALLA_TE_LLOC_EN_PLANETA(codiBatalla, codiPlaneta)
+CP: codiBatalla, codiPlaneta
+CEx: codiBatalla -> BATALLA
+CEx: codiPlaneta -> PLANETA
+
+SISTEMA_TE_SEU_EN_PLANETA(codiSistema, codiPlaneta)
+CP: codiSistema
+CAlt: codiPlaneta
+CEx: codiSistema -> SISTEMA
+CEx: codiPlaneta -> PLANETA
+
+PARTICIPA(codiBatalla, codiPilot, codiAeronau)
+CP: codiBatalla, codiPilot
+VNN: codiAeronau
+CEx: codiBatalla -> BATALLA
+CEx: codiPilot -> PILOT
+CEx: codiAeronau -> AERONAU
+
