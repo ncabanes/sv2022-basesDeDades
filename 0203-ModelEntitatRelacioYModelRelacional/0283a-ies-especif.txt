@@ -1,0 +1,34 @@
+Es desitja informatitzar la gestió d'un centre d'ensenyament secundari obligatori, batxillerat i formació professional, de manera que complisca els següents requisits:
+
+Cada alumne sol·licita plaça en un curs. En concret, cada alumne, es matricularà d'una o diverses assignatures. Es considera acceptable que al sistema aparega alguna assignatura que realment no s'haja oferit a alumnes, o que, malgrat haver-se oferit, no s'arribe a impartir per no existir suficient alumnat interessat.
+
+En aquesta primera aproximació, de cada alumne desitgen anotar un codi numèric, el seu nom complet i el seu domicili (carrer, número, pis i porta), així com un o diversos números de telèfon. També ens han dit que la majoria d'alumnes ve de la pròpia ciutat en la qual està el centre d'estudis, però no sempre és així.
+
+De cada assignatura, es desitja saber el seu codi i el seu nom. També volen distingir entre assignatures de secundària/batxillerat i assignatures de cicles, ja que per a les de cicles és necessari saber la quantitat d'hores, així com les assignatures que s'hagen d'haver cursat prèviament, ja que són un requisit.
+
+Ens han comentat que realment existeix la possibilitat que un alumne obtinga plaça en dos cursos diferents, sempre que un siga presencial i un altre semipresencial, però que no desitgen reflectir aqueixa informació en el sistema encara, atés que és molt poc freqüent. Sí que desitgen saber si l'alumne està interessat en altres cursos perquè no se'ls haja concedit plaça. Per exemple, diuen que és freqüent que un alumne obtinga plaça en un cicle semipresencial però preferisca canviar-se a DAM o DAW presencial, en cas d'existir vacants.
+
+Per a cada matrícula es desitja saber la data en la qual s'ha realitzat.
+
+D'altra banda, cada assignatura és impartida per un o diversos professors, i se'ls assigna una aula per a cada dia i hora en què la imparteix (el que conforma l'horari de classes del professor). Una assignatura pot ser impartida per dos professors alhora (el que es coneix com un "desdoblament"), ja siga en diferent aula o fins i tot en la mateixa. També pot ocórrer que un professor no sempre utilitze la mateixa aula per a una certa assignatura (per exemple, perquè un dia de la setmana vulga emprar una aula amb major equipament tecnològic). De cada aula es desitja anotar un codi, un nom i la capacitat (nombre de seients). De cada professor es desitja anotar el seu DNI, el seu nom (que, òbviament, no ha de ser nul), la seua titulació (un professor pot tindre diverses titulacions, però només ens interessa aquella per la qual va obtindre la plaça) i el departament al qual pertany (per a cada departament s'anotarà només un codi i un nom).
+
+Una vegada s'ha formalitzat la matrícula, abans que comence el curs, a cada alumne se li assigna un grup. Per a cada grup s'usa un codi alfabètic (A, B, C i lletres successives) i un nom. Per descomptat, existeix un grup A en diferents nivells (2n ESO A però també 3r ESO A).
+També volen anotar les possibles ocupacions dels professors que no són estrictament lectives, com les "guàrdies" o les hores d'atenció a pares. Per a cada ocupació s'anotarà un codi i una descripció. I per a cada professor, es guardarà el seu horari d'ocupacions, és a dir, la llista de dies i hores que dedica a cada ocupació.
+
+---
+
+Se desea informatizar la gestión de un centro de estudios de enseñanza secundaria obligatoria, bachillerato y formación profesional, de modo que cumpla los siguientes requisitos:
+Cada alumno solicita plaza en un curso. En concreto, cada alumno, se matriculará de una o varias asignaturas. Se considera aceptable que en el sistema aparezca alguna asignatura que realmente no se haya ofertado a alumnos, o que, a pesar de haberse ofertado, no se llegue a impartir por no existir suficiente alumnado interesado.
+
+En esta primera aproximación, de los alumnos desean anotar un código numérico, su nombre completo y su domicilio (calle, número, piso y puerta), así como uno o varios números de teléfono. También nos han dicho que la mayoría de alumnos viene de la propia ciudad en la que está el centro de estudios, pero no siempre es así.
+
+De cada asignatura, se desea saber su código y su nombre. También quieren distinguir entre asignaturas de secundaria/bachillerato y asignaturas de ciclos, ya que para las de ciclos es necesario saber la cantidad de horas, así como las asignaturas que se deban haber cursado previamente, ya que son un requisito.
+
+Nos han comentado que realmente existe la posibilidad de que un alumno obtenga plaza en dos cursos distintos, siempre y cuando uno sea presencial y otro semipresencial, pero que no desean reflejar esa información en el sistema todavía, dado que es muy poco frecuente. Sí desean saber si el alumno está interesado en otros estudios porque no se les haya concedido plaza. Por ejemplo, dicen que es frecuente que un alumno obtenga plaza en un ciclo semipresencial pero prefiera cambiarse a DAM o DAW presencial, en caso de existir vacantes.
+
+Para cada matrícula se desea saber la fecha en la que se realiza.
+
+Por otra parte, cada asignatura es impartida por uno o varios profesores, y se les asigna un aula para cada día y hora en que la imparte (lo que conforma el "horario" de clases del profesor). Una asignatura puede ser impartida por dos profesores a la vez (lo que se conoce como un "desdoble"), ya sea en distinta aula o incluso en la misma. También puede ocurrir que un profesor no siempre utilice la misma aula para una cierta asignatura (por ejemplo, porque un día de la semana quiera emplear un aula con mayor equipamiento tecnológico). De cada aula se desea anotar un código, un nombre y la capacidad (número de asientos). De cada profesor se desea anotar su DNI, su nombre (que, obviamente, no debe ser nulo), su titulación (un profesor puede tener varias titulaciones, pero sólo nos interesa aquella por la que obtuvo la plaza) y el departamento al que pertenece (para cada departamento se anotará sólo un código y un nombre).
+
+Una vez se ha formalizado la matrícula, antes de que comience el curso, a cada alumno se le asigna un grupo. Para cada grupo se usa un código alfabético (A, B, C y letras sucesivas) y un nombre. Por supuesto, existe un grupo A en distintos niveles (2º ESO A pero también 3º ESO A).
+También quieren anotar las posibles ocupaciones de los profesores que no son estrictamente lectivas, como las "guardias" o las horas de atención a padres. Para cada ocupación se anotará un código y una descripción. Y para cada profesor, se guardará su horario de ocupaciones, es decir, la lista de días y horas que dedica a cada ocupación.
