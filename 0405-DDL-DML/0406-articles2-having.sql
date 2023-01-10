@@ -49,7 +49,7 @@ having count(*) < 3;
 
 
 -- El preu mitjà dels articles de cada marca, 
--- per a les marques preu mitjà inferior a 100.
+-- per a les marques amb preu mitjà inferior a 100.
 
 select marca, avg(preu) as preuMitja
 from articles
