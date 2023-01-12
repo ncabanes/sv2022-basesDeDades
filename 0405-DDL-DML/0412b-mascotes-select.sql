@@ -48,19 +48,19 @@ where mascotes.codi_propietari = propietaris.codi;
 
 select nom 
 from mascotes
-where nom like "P%";
+where nom like 'P%';
 
--- Noms de les mascotes de "Raul".
+-- Noms de les mascotes de 'Raul'.
 
 select mascotes.nom, propietaris.nom
 from mascotes, propietaris
 where mascotes.codi_propietari = propietaris.codi
 and propietaris.nom = 'Raul';
 
--- Noms de les mascotas que siguen algun tipus de "Pastor", ordenat alfabèticament.
+-- Noms de les mascotas que siguen algun tipus de 'Pastor', ordenat alfabèticament.
 
 select nom from mascotes
-where tipus like "Pastor %"
+where tipus like 'Pastor %'
 order by nom;
 
 -- Quantitat de mascotes.
@@ -71,7 +71,7 @@ select count(*) from mascotes;
 
 select min(telefon) from propietaris;
 
--- Noms de les mascotes de "ANGEL" (potser amb majúscules diferents).
+-- Noms de les mascotes de 'ANGEL' (potser amb majúscules diferents).
 select mascotes.nom, propietaris.nom
 from mascotes, propietaris
 where mascotes.codi_propietari = propietaris.codi
