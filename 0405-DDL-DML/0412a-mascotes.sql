@@ -32,7 +32,7 @@ INSERT INTO mascotes VALUES (4,'Tara','Podenco',4);
 
 -- Nom i cognoms dels propietaris amb un codi que no siga 2.
 
--- Noms de les mascotes i el seu propietarial costat dels noms dels seus propietaris.
+-- Noms de les mascotes al costat dels noms dels seus propietaris.
 
 -- Noms de les mascotes el nom de les quals comença per P.
 
